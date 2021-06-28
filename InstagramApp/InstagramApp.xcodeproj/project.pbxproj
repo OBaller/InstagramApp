@@ -29,6 +29,9 @@
 		1854E69A26893AC30095DD69 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E69926893AC30095DD69 /* PostEditorViewController.swift */; };
 		1854E69C26893ADF0095DD69 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E69B26893ADF0095DD69 /* PublishPostViewController.swift */; };
 		1854E6A026894A0E0095DD69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1854E69F26894A0E0095DD69 /* GoogleService-Info.plist */; };
+		1854E6A22689CB2F0095DD69 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A12689CB2F0095DD69 /* DatabaseManager.swift */; };
+		1854E6A42689CCE90095DD69 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A32689CCE80095DD69 /* AuthManager.swift */; };
+		1854E6A62689CD1B0095DD69 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A52689CD1B0095DD69 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		1854E69926893AC30095DD69 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		1854E69B26893ADF0095DD69 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		1854E69F26894A0E0095DD69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1854E6A12689CB2F0095DD69 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1854E6A32689CCE80095DD69 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		1854E6A52689CD1B0095DD69 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		2C5B77354CF873A34879BEC5 /* Pods-InstagramApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramApp.release.xcconfig"; path = "Target Support Files/Pods-InstagramApp/Pods-InstagramApp.release.xcconfig"; sourceTree = "<group>"; };
 		2EECB48FC713A183E64710EE /* Pods_InstagramApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E37F01C662DAC1E4FD324BF /* Pods-InstagramApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramApp.debug.xcconfig"; path = "Target Support Files/Pods-InstagramApp/Pods-InstagramApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 			children = (
 				1854E665268930F30095DD69 /* AppDelegate.swift */,
 				1854E667268930F30095DD69 /* SceneDelegate.swift */,
+				1854E6A12689CB2F0095DD69 /* DatabaseManager.swift */,
+				1854E6A32689CCE80095DD69 /* AuthManager.swift */,
+				1854E6A52689CD1B0095DD69 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -322,12 +331,15 @@
 				1854E681268935BF0095DD69 /* CameraViewController.swift in Sources */,
 				1854E683268935F60095DD69 /* NotificationViewController.swift in Sources */,
 				1854E69A26893AC30095DD69 /* PostEditorViewController.swift in Sources */,
+				1854E6A62689CD1B0095DD69 /* StorageManager.swift in Sources */,
 				1854E68E268939CB0095DD69 /* PostViewController.swift in Sources */,
+				1854E6A22689CB2F0095DD69 /* DatabaseManager.swift in Sources */,
 				1854E66A268930F30095DD69 /* HomeViewController.swift in Sources */,
 				1854E68A268939590095DD69 /* LoginViewController.swift in Sources */,
 				1854E69826893A8F0095DD69 /* ListViewController.swift in Sources */,
 				1854E69626893A6E0095DD69 /* SearchResultViewController.swift in Sources */,
 				1854E69426893A550095DD69 /* SearchViewController.swift in Sources */,
+				1854E6A42689CCE90095DD69 /* AuthManager.swift in Sources */,
 				1854E685268936210095DD69 /* ProfileViewController.swift in Sources */,
 				1854E666268930F30095DD69 /* AppDelegate.swift in Sources */,
 				1854E668268930F30095DD69 /* SceneDelegate.swift in Sources */,
