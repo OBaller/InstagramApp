@@ -32,6 +32,7 @@
 		1854E6A22689CB2F0095DD69 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A12689CB2F0095DD69 /* DatabaseManager.swift */; };
 		1854E6A42689CCE90095DD69 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A32689CCE80095DD69 /* AuthManager.swift */; };
 		1854E6A62689CD1B0095DD69 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A52689CD1B0095DD69 /* StorageManager.swift */; };
+		1854E6A82689DEB80095DD69 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A72689DEB80095DD69 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		1854E6A12689CB2F0095DD69 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		1854E6A32689CCE80095DD69 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		1854E6A52689CD1B0095DD69 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		1854E6A72689DEB80095DD69 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2C5B77354CF873A34879BEC5 /* Pods-InstagramApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramApp.release.xcconfig"; path = "Target Support Files/Pods-InstagramApp/Pods-InstagramApp.release.xcconfig"; sourceTree = "<group>"; };
 		2EECB48FC713A183E64710EE /* Pods_InstagramApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E37F01C662DAC1E4FD324BF /* Pods-InstagramApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramApp.debug.xcconfig"; path = "Target Support Files/Pods-InstagramApp/Pods-InstagramApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				1854E6A12689CB2F0095DD69 /* DatabaseManager.swift */,
 				1854E6A32689CCE80095DD69 /* AuthManager.swift */,
 				1854E6A52689CD1B0095DD69 /* StorageManager.swift */,
+				1854E6A72689DEB80095DD69 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				1854E66A268930F30095DD69 /* HomeViewController.swift in Sources */,
 				1854E68A268939590095DD69 /* LoginViewController.swift in Sources */,
 				1854E69826893A8F0095DD69 /* ListViewController.swift in Sources */,
+				1854E6A82689DEB80095DD69 /* Extensions.swift in Sources */,
 				1854E69626893A6E0095DD69 /* SearchResultViewController.swift in Sources */,
 				1854E69426893A550095DD69 /* SearchViewController.swift in Sources */,
 				1854E6A42689CCE90095DD69 /* AuthManager.swift in Sources */,
