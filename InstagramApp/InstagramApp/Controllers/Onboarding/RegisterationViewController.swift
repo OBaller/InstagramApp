@@ -79,7 +79,7 @@ class RegisterationViewController: UIViewController {
         view.addSubview(registerButton)
     }
     
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerButton.addTarget(self, action: #selector(didTapRegister), for: .touchUpInside)
@@ -104,7 +104,22 @@ class RegisterationViewController: UIViewController {
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
         
+        guard let email = emailField.text, !email.isEmpty,
+              let password = passwordField.text, !password.isEmpty, password.count >= 8,
+              let username = usernameField.text, !username.isEmpty else {
+            return
+        }
         
+        AuthManager.shared.registerNewUser(username: username, email: email, password: password) { registered in
+            DispatchQueue.main.async {
+                if registered {
+                    // good to go
+                }
+                else {
+                    
+                }
+            }
+        }
     }
 }
 
