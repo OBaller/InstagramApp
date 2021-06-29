@@ -174,9 +174,9 @@
 		1854E687268938F40095DD69 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				1854E691268939F10095DD69 /* SettingsViewController.swift */,
 				1854E68F268939E10095DD69 /* EditProfileViewController.swift */,
 				1854E68D268939CB0095DD69 /* PostViewController.swift */,
-				1854E691268939F10095DD69 /* SettingsViewController.swift */,
 				1854E69326893A550095DD69 /* SearchViewController.swift */,
 				1854E69526893A6E0095DD69 /* SearchResultViewController.swift */,
 				1854E69726893A8F0095DD69 /* ListViewController.swift */,
