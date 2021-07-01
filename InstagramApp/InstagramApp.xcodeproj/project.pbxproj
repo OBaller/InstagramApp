@@ -33,6 +33,10 @@
 		1854E6A42689CCE90095DD69 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A32689CCE80095DD69 /* AuthManager.swift */; };
 		1854E6A62689CD1B0095DD69 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A52689CD1B0095DD69 /* StorageManager.swift */; };
 		1854E6A82689DEB80095DD69 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E6A72689DEB80095DD69 /* Extensions.swift */; };
+		18AEA3A6268E649900E3AF7D /* IGPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEA3A5268E649900E3AF7D /* IGPostTableViewCell.swift */; };
+		18AEA3A9268E6AE900E3AF7D /* IGPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEA3A8268E6AE900E3AF7D /* IGPostHeaderTableViewCell.swift */; };
+		18AEA3AB268E6B1000E3AF7D /* IGPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEA3AA268E6B1000E3AF7D /* IGPostActionTableViewCell.swift */; };
+		18AEA3AD268E6B6700E3AF7D /* IGPostFeedGenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEA3AC268E6B6700E3AF7D /* IGPostFeedGenericTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		1854E6A32689CCE80095DD69 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		1854E6A52689CD1B0095DD69 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		1854E6A72689DEB80095DD69 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		18AEA3A5268E649900E3AF7D /* IGPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPostTableViewCell.swift; sourceTree = "<group>"; };
+		18AEA3A8268E6AE900E3AF7D /* IGPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		18AEA3AA268E6B1000E3AF7D /* IGPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPostActionTableViewCell.swift; sourceTree = "<group>"; };
+		18AEA3AC268E6B6700E3AF7D /* IGPostFeedGenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPostFeedGenericTableViewCell.swift; sourceTree = "<group>"; };
 		2C5B77354CF873A34879BEC5 /* Pods-InstagramApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramApp.release.xcconfig"; path = "Target Support Files/Pods-InstagramApp/Pods-InstagramApp.release.xcconfig"; sourceTree = "<group>"; };
 		2EECB48FC713A183E64710EE /* Pods_InstagramApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E37F01C662DAC1E4FD324BF /* Pods-InstagramApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramApp.debug.xcconfig"; path = "Target Support Files/Pods-InstagramApp/Pods-InstagramApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 		1854E67A268933D10095DD69 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18AEA3A4268E647D00E3AF7D /* Cells */,
 				1854E66E268930F60095DD69 /* Assets.xcassets */,
 			);
 			path = Views;
@@ -193,6 +202,25 @@
 				1854E68B2689396A0095DD69 /* RegisterationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		18AEA3A4268E647D00E3AF7D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18AEA3A7268E6ABF00E3AF7D /* HomeFeed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18AEA3A7268E6ABF00E3AF7D /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				18AEA3A8268E6AE900E3AF7D /* IGPostHeaderTableViewCell.swift */,
+				18AEA3AA268E6B1000E3AF7D /* IGPostActionTableViewCell.swift */,
+				18AEA3A5268E649900E3AF7D /* IGPostTableViewCell.swift */,
+				18AEA3AC268E6B6700E3AF7D /* IGPostFeedGenericTableViewCell.swift */,
+			);
+			path = HomeFeed;
 			sourceTree = "<group>";
 		};
 		19F91D433DD9D754642BDD81 /* Frameworks */ = {
@@ -328,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1854E690268939E10095DD69 /* EditProfileViewController.swift in Sources */,
+				18AEA3AB268E6B1000E3AF7D /* IGPostActionTableViewCell.swift in Sources */,
 				1854E67F268935A50095DD69 /* ExploreViewController.swift in Sources */,
 				1854E69C26893ADF0095DD69 /* PublishPostViewController.swift in Sources */,
 				1854E68C2689396A0095DD69 /* RegisterationViewController.swift in Sources */,
@@ -336,14 +365,17 @@
 				1854E69A26893AC30095DD69 /* PostEditorViewController.swift in Sources */,
 				1854E6A62689CD1B0095DD69 /* StorageManager.swift in Sources */,
 				1854E68E268939CB0095DD69 /* PostViewController.swift in Sources */,
+				18AEA3A9268E6AE900E3AF7D /* IGPostHeaderTableViewCell.swift in Sources */,
 				1854E6A22689CB2F0095DD69 /* DatabaseManager.swift in Sources */,
 				1854E66A268930F30095DD69 /* HomeViewController.swift in Sources */,
+				18AEA3AD268E6B6700E3AF7D /* IGPostFeedGenericTableViewCell.swift in Sources */,
 				1854E68A268939590095DD69 /* LoginViewController.swift in Sources */,
 				1854E69826893A8F0095DD69 /* ListViewController.swift in Sources */,
 				1854E6A82689DEB80095DD69 /* Extensions.swift in Sources */,
 				1854E69626893A6E0095DD69 /* SearchResultViewController.swift in Sources */,
 				1854E69426893A550095DD69 /* SearchViewController.swift in Sources */,
 				1854E6A42689CCE90095DD69 /* AuthManager.swift in Sources */,
+				18AEA3A6268E649900E3AF7D /* IGPostTableViewCell.swift in Sources */,
 				1854E685268936210095DD69 /* ProfileViewController.swift in Sources */,
 				1854E666268930F30095DD69 /* AppDelegate.swift in Sources */,
 				1854E668268930F30095DD69 /* SceneDelegate.swift in Sources */,
