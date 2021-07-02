@@ -4,9 +4,9 @@
 //
 //  Created by apple on 27/06/2021.
 //
-
+import SafariServices
 import UIKit
-struct SettingsModel {
+struct SettingsCellModel {
     let title: String
     let handler: (() -> Void)
 }
@@ -19,7 +19,7 @@ final class SettingsViewController: UIViewController {
         return tableView
     }()
     
-    private var data = [[SettingsModel]]()
+    private var data = [[SettingsCellModel]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +36,68 @@ final class SettingsViewController: UIViewController {
     }
     
     private func configureModels() {
-        let section = [
-            SettingsModel(title: "Log Out") { [weak self] in
+        data.append([
+            SettingsCellModel(title: "Edit Profile") { [weak self] in
+                self?.didTapEditProfile()
+            },
+            SettingsCellModel(title: "Invite Friends") { [weak self] in
+                self?.didTapInviteFriends()
+            },
+            SettingsCellModel(title: "Save Original Posts") { [weak self] in
+                self?.didTapSaveOriginalPosts()
+            },
+        ])
+        
+        data.append([
+            SettingsCellModel(title: "Terms of Service") { [weak self] in
+                self?.openURL(type: .terms)
+            },
+            SettingsCellModel(title: "Privacy Policy") { [weak self] in
+                self?.openURL(type: .privacy)
+            },
+            SettingsCellModel(title: "Help / Feedback") { [weak self] in
+                self?.openURL(type: .help)
+            },
+        ])
+        
+        data.append([
+            SettingsCellModel(title: "Log Out") { [weak self] in
                 self?.didTapLogOut()
             }
-        ]
-        data.append(section)
+        ])
+    }
+    
+    enum SettingsURLType {
+        case terms, privacy, help
+    }
+    
+    private func openURL(type: SettingsURLType) {
+        let urlString: String
+        switch type {
+        case .terms: urlString = "https://www.instagram.com/about/legal/terms/before-january-19-2013/"
+        case .privacy: urlString = "https://www.instagram.com/terms/accept/?hl=en"
+        case .help: urlString = "https://help.instagram.com/"
+        }
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
+    }
+    
+    private func didTapEditProfile() {
+        let vc = EditProfileViewController()
+        vc.title = "Edit Profile"
+        let navVc = UINavigationController(rootViewController: vc)
+        present(navVc, animated: true)
+    }
+    
+    private func didTapInviteFriends() {
+        // show sharesheet to invite friends
+    }
+    
+    private func didTapSaveOriginalPosts() {
+        
     }
     
     private func didTapLogOut() {
@@ -88,6 +144,7 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = data[indexPath.section][indexPath.row].title
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
